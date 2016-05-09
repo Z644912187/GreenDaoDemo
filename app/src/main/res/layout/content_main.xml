@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sjtu.charles.activity.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:id="@+id/editTextNote"
+                android:hint="Enter new note"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Add"
+                android:id="@+id/buttonAdd"
+                android:enabled="false"/>
+        </LinearLayout>
+        <ListView
+            android:id="@android:id/list"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+    </LinearLayout>
+</RelativeLayout>
